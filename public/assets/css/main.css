@@ -1,0 +1,1810 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-weight: 400px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* dùng chung*/
+.center{
+    text-align: center;
+}
+.flex{
+    display:flex;
+}
+.ta-end{
+    text-align: end;
+}
+.italic{
+    font-style: italic;
+}
+.fs-14{
+    font-size:14px;
+}
+.mt52{
+    margin-top: 52px!important;
+}
+.red{
+    color: red!important;
+}
+.border-bt{
+    height:1px;
+    background-color: #07AA5C;
+}
+.mbt-0{
+    margin-bottom: 0;
+}
+.ml30{
+    margin-left: 30px;
+}
+.gray{
+    color: gray!important;;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.font-weight{
+    font-weight: 700;
+}
+.w-80{
+    width:80%;
+}
+.fs-20{
+    font-size: 20px;
+}
+.w-90{
+    width: 90%;
+}
+.opacity{
+    color:#8C8C8C;
+}
+.ml-5{
+    transform: translateX(5px);
+}
+.register-parent-background ,
+.register-tutor-background,
+.login-background,
+.register-profile-tutor-background,
+.edit-profile-tutor-background
+{
+    margin-top: 50px!important;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.background-container{
+    margin-top: 50px!important;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-height: 300px;
+}
+.background-container li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.background-container .no-b-bt{
+    border: none!important;
+}
+.background-container a{
+    text-decoration: none;
+    color:black;
+    font-weight:500;
+    cursor: pointer;
+}
+.background-container p{
+    border-bottom: 1px solid #ccc;
+}
+.fa-regular.fa-bookmark.saved {
+    color: gold; /* Màu vàng khi đã lưu thành công */
+}
+.modal-js{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+}
+.hide{
+    display:none;
+}
+.modal-header{
+    border-bottom: none!important;
+    justify-content: center;
+}
+.modal-content{
+    transform: translateY(190px);
+}
+.modal-createPost{
+    transform: translateY(110px);
+}
+.modal-footer{
+    border-top:none!important;
+    justify-content: center;
+}
+.modal-footer button{
+    width: 70px;
+}
+.modal-footer .btn-yes{
+    margin-right:20px;
+}
+.modal-body{
+    text-align:center
+}
+.modal-notification .modal-header{
+    background:#000;
+    color:white;
+}
+.start{
+    text-align: start;
+}
+.no-search{
+    font-size: 30px;
+
+}
+/*end dùng chung*/
+
+/* header */
+#header .header-main{
+    display:flex;
+    height:auto;
+}
+#header .header-logo ,.header-contact-gmail,
+.header-contact-phone{
+    padding-top:5px;
+    padding:15px;
+}
+#header .header-logo img{
+    width:50px;
+    height:35px;
+}
+#header .header-main h6{
+    padding-top:13px;
+}
+#header .header-main span{
+    padding-left: 15px;
+}
+#header .header-contact{
+    display:flex;
+}
+#header .header-contact span{
+    font-size:15px;
+}
+#header .header-contact {
+    display:flex;
+}
+#header .header-contact-border-right {
+    padding-left:20px;
+    border-right:1.3px solid black;;
+}
+#header .header-login{
+    text-align:end;
+    padding-top:15px;
+}
+#header .header-btn-login, .header-btn-register{
+    border: 1px solid #555555!important;
+    border-radius: 40px!important;
+    font-size:15px!important;
+    transition: 0.3s;
+}
+#header .header-btn-login:hover ,.header-btn-register:hover{
+    transform:translateY(-5px)
+}
+#header .header-page{
+    background-color: black;
+}
+#header-page {
+    background-color: black;
+    display:flex;
+    height:auto;
+}
+#header-page .header-page-home,.header-page-menu{
+    padding :20px;
+}
+#header-page .header-page-home{
+    width:30%;
+    padding-left:90px;
+}
+#header-page .header-page-menu{
+    width:70%;
+}
+#header-page a{
+    color:white;
+    text-decoration: none;
+    padding:20px;
+}
+#header-page .header-page-menu a{
+    padding-left:35px;
+    padding-right:35px;
+}
+#header-page .header-page-menu a:hover{
+    color:wheat;
+    transition: 0.3s;
+}
+/*end header*/
+
+/*slider*/
+#slider {
+    opacity: 0;
+    animation: slide-in-right 3s ease-in-out forwards;
+}
+#slider .slider_content {
+    text-align:center;
+    transform: translateY(150px);
+}
+#slider .slider_img img{
+    width:100%;
+    height:400px;
+}
+/*end slider*/
+
+/*content*/
+#content-why {
+    padding-top:50px;
+    opacity: 0;
+    animation: slide-in-left 3s ease-in-out forwards;
+    animation-delay: 1s;
+    padding-bottom:50px;
+}
+#content-why .content-why-header{
+    font-weight: 600;
+    font-size:20px;
+    text-align:center;
+    padding-bottom:30px;
+}
+#content-why .content-why-img img{
+    width:75px;
+    height:75px;
+    padding-bottom:20px;
+}
+#content-how{
+    opacity: 0;
+    animation: slide-in-right 3s ease-in-out forwards;
+    animation-delay: 1.5s
+}
+#content-how .content-how-header{
+    font-weight:600;
+    font-size:25px;
+    text-align:center;
+    padding-bottom:30px;
+}
+#content-how .content-how-img img{
+    width:75px;
+    height:75px;
+    padding-bottom:20px;
+}
+/*end content*/
+
+/*request-tutor*/
+#request-tutor{
+    padding-top:70px;
+    opacity: 0;
+    animation: slide-in-left 3.5s ease-in-out forwards ;
+    animation-delay: 2s;
+}
+#request-tutor .request-tutor-img img{
+    width:100%;
+    height:400px;
+}
+#request-tutor .request-tutor-post{
+    transform: translateY(110px);
+}
+/*end request-tutor*/
+
+/*become-tutor*/
+#become-tutor{
+    animation: fadeIn 5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+#become-tutor .become-tutor-content{
+    transform: translateY(120px);
+}
+#become-tutor .become-tutor-img img{
+    width:100%;
+    height:400px;
+}
+/*end become-tutor;
+
+/*contact*/
+#contact {
+    animation: fadeIn 6s ease-in-out forwards ;
+    opacity: 0;
+    animation-delay:3s;
+}
+#contact .contact-content{
+    transform: translateY(120px);
+}
+#contact .contact-img img{
+    width:100%;
+    height:400px;
+}
+#contact .contact-btn-phone ,.contact-btn-gmail{
+    border: 1px solid #555555!important;
+    border-radius: 40px!important;
+    font-size:15px!important;
+    transition:0.3s
+}
+#contact .contact-btn-phone:hover ,.contact-btn-gmail:hover{
+    transform:translate(5px, 5px) scale(0.9)
+}
+/*end contact*/
+
+/*footer*/
+#footer{
+    background-color: #1D1B1A;
+    height:auto;
+    color:white;
+}
+#footer .footer-logo{
+    padding-top:30px;
+    padding-bottom:20px;
+}
+#footer .footer-logo img{
+    width:50px;
+    height:50px;
+}
+#footer p {
+    font-size:10px;
+}
+#footer .footer-icon-top-location{
+    padding-top:30px;
+}
+#footer .footer-top-location-detail,
+.footer-top-subject-detail,
+.footer-learning-resource-detail
+{
+    padding-left:15px;
+}
+#footer .footer-other-detail{
+    padding-left:10px;
+}
+#footer .footer-top-location{
+    padding-left: 70px;
+}
+#footer .footer-top-subject,
+.footer-learning-resource,.footer-other
+{
+    padding-top:30px;
+    padding-left:100px;
+}
+#footer .footer-top-location-detail p,
+.footer-top-subject-detail p,
+.footer-learning-resource-detail p,
+.footer-other-detail p{
+    margin-bottom: 0!important;
+}
+#footer .footer-learning-resource ,.footer-other{
+    padding-top:30px;
+}
+
+#footer .footer-follow-us-icon a{
+    font-size:25px;
+    color:white;
+    text-decoration: none;
+}
+#footer .footer-follow-us-icon-facebook,
+.footer-follow-us-icon-twitter{
+    padding-right:10px;
+}
+#footer .footer-follow-us-icon a:hover{
+    opacity: 0.7;
+}
+
+#footer .footer-about {
+    padding-top:20px;
+    padding-left:70px
+}
+#footer .footer-end{
+    padding-left:70px;
+}
+#footer .footer-end-padding{
+    padding-left:150px;
+}
+/*end footer*/
+
+/*register-parent*/
+#register-parent{
+    padding-top:30px;
+    padding-bottom: 30px;
+    
+}
+#register-parent h4{
+    color:#8C8C8C;
+    padding-left:5px;
+    padding-right:7px;
+}
+#register-parent a{
+    text-decoration: none;
+}
+#register-parent .background{
+    background-color: rgba(217, 217, 217, 0.52);
+    padding-left:5px;
+    padding-right:5px;
+    border-radius: 5px;
+}
+#register-parent .form-register input, .form-register select {
+    width:100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgba(217, 217, 217, 0.52);
+    border: none;
+    border-radius: 10px;
+    outline:0;
+}
+#register-parent .form-register input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#register-parent .form-register{
+    padding-top: 20px;
+}
+#register-parent .form-register .btn-register{
+    padding:40px;
+    text-align:center;
+}
+#register-parent .form-register .btn-register button{
+    width:125px;
+}
+#register-parent .form-register label{
+    color:#8C8C8C
+}
+/*end register-parent*/
+
+/*register-tutor*/
+#register-tutor{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+#register-tutor h4{
+    color:#8C8C8C;
+    padding-left:5px;
+    padding-right:7px;
+}
+#register-tutor a{
+    text-decoration: none;
+}
+#register-tutor .background{
+    background-color: rgba(217, 217, 217, 0.52);
+    padding-left:5px;
+    padding-right:5px;
+    border-radius: 5px;
+}
+#register-tutor .form-register .input, .form-register select {
+    width:100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgba(217, 217, 217, 0.52);
+    border: none;
+    border-radius: 10px;
+    outline:0;
+}
+#register-tutor .form-register .input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#register-tutor .form-register{
+    padding-top: 20px;
+}
+#register-tutor .form-register .btn-register{
+    padding:40px;
+    text-align:center;
+}
+#register-tutor .form-register .btn-register button{
+    width:125px;
+}
+#register-tutor .form-register label{
+    color:#8C8C8C
+}
+#register-tutor .form-register p{
+    padding-top:13px;
+    padding-left:10px;
+}
+#register-tutor .form-register .checkbox{
+    padding:10px;
+}
+/*end register-tutor*/
+
+/*login*/
+#login .form-login input{
+    width:70%;
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid black;
+    outline:0;
+}
+#login .form-login button{
+    width:70%;
+}
+#login .form-login input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#login .form-login h6{
+    transform:translateX(-135px);
+}
+#login .form-login .email{
+    padding-right:40px;
+}
+#login .form-login .password{
+    padding-right:15px;
+    padding-top:10px;
+}
+#login .form-login .btn-login ,.form-login .forgot-password{
+    padding-top:30px;
+}
+#login .form-login .forgot-password a{
+    text-decoration: none;
+    color:red;
+}
+#login .sign-up {
+    padding-top:20px;
+}
+#login .sign-up a{
+    margin-left:10px;
+    margin-top:-5px;
+}
+#login .sign-up a:hover{
+    transform:translateY(-5px)
+}
+
+#login .role input{
+    width:10%;
+    transform: translateY(1.5px);
+}
+#login .role input:focus{
+    border-color:none; 
+    box-shadow: none; 
+}
+#login .role span{
+    opacity:0.8;
+}
+/* #login .role .btn-tutor ,.btn-reg{
+    width:50px!important;
+} */
+#login .background{
+    background-color: rgba(217, 217, 217, 0.52);
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+/*end login*/
+
+/*forgot-password*/
+#forgot-password input{
+    width:70%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgba(217, 217, 217, 0.52);
+    border: none;
+    border-radius: 10px;
+    outline:0;
+}
+#forgot-password input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#forgot-password .email{
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+#forgot-password .btn-forgot-password{
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+/*end forgotPassword*/
+
+/*regiter-profile-tutor*/
+#register-profile-tutor .register-profile-tutor-title ,
+.register-profile-professional,
+.register-tutor-confirmation{
+    color:white;
+    font-size:15px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    font-weight: 600;
+}
+#register-profile-tutor .register-profile-tutor-information{
+    padding-left:30px;
+    padding-top:20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+} 
+#register-profile-tutor input, 
+#register-profile-tutor select{
+    width:85%;
+    padding: 5px;
+    border-radius: 20px;
+    border:1px solid black;
+    outline:0;
+}
+#register-profile-tutor input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#register-profile-tutor .pdl p{
+    padding-left: 80px;
+}
+#register-profile-tutor .register-profile-tutor-title p,
+.form-profile-tutor p 
+{
+    margin-bottom: 0!important;
+}
+#register-profile-tutor .form-introduce-yourself ,.form-class-schedule{
+    padding-top:10px;
+    padding-bottom: 30px;
+}
+#register-profile-tutor .form-introduce-yourself input ,
+#register-profile-tutor .form-class-schedule input
+{
+    width:100%;
+    padding-bottom: 50px;
+}
+
+#register-profile-tutor .padding{
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:30px;
+}
+#register-profile-tutor .form-upload-image img{
+    width:300px;
+    height:150px;
+    margin-top:30px;
+}
+#chooseDegree ,#chooseAvatar{
+    margin-top:30px;
+    border:1px solid #ccc
+}
+#chooseDegree:hover ,#chooseAvatar:hover{
+    transform: translateY(-5px);
+}
+#textDegree ,#textAvatar{
+    padding-top:20px;
+}
+#register-profile-tutor .btn-register{
+    width:110px;
+}
+/*end regiter-profile-tutor
+
+/*formCreatePost*/
+#createPost .form-createPost{
+    width: 100%;
+    height:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #464444;
+    border-radius: 10px;
+}
+#createPost .form-title{
+    width: 100%;
+    border: 1px solid #464444;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #464444;
+    padding: 9px;
+}
+#createPost .createPost-content-district {
+    padding-right: 10px;
+    padding-top: 294.7px;
+}
+#createPost .createPost-content select ,.createPost-content-district select{
+    width:100%;
+    padding:7px;
+    outline: 0;
+}
+#createPost .createPost-content input{
+    padding:7px;
+    border:1px solid black;
+    outline:0;
+    width:100%;
+}
+#createPost input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+
+#createPost .form-title p{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+#createPost .createPost-content p,
+.createPost-content-district p,
+.createPost-content-schedule p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#createPost .createPost-content span,
+.createPost-content-district span,
+.createPost-content-schedule span{
+    color: red;
+}
+#createPost .createPost-content,
+.createPost-content-schedule{
+    padding-right:10px;
+    padding-left:10px;
+}
+#createPost .createPost-content-schedule input{
+    padding-top:3px;
+    padding-bottom: 30px;
+    padding-left:5px;
+    border:1px solid black;
+    outline:0;
+    width:100%;
+}
+#createPost .btn-container{
+    margin-bottom: 20px;
+}
+#createPost .btn-container .btn-post ,
+.btn-container .btn-back{
+    width:100px;
+}
+#createPost .btn-container .btn-post{
+    margin-right:20px;
+}
+/*end createPost */
+
+/*Edit post*/
+#editPost .form-editPost{
+    width: 100%;
+    height:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #464444;
+    border-radius: 10px;
+}
+#editPost .form-title{
+    width: 100%;
+    border: 1px solid #464444;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #464444;
+    padding: 9px;
+}
+#editPost .editPost-content-district {
+    padding-right: 10px;
+    padding-top: 294.75px;
+}
+#editPost .editPost-content select ,
+.editPost-content-district select{
+    width:100%;
+    padding:7px;
+    outline: 0;
+}
+#editPost .editPost-content input{
+    padding:7px;
+    border:1px solid black;
+    outline:0;
+    width:100%;
+}
+#editPost input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+
+#editPost .form-title p{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+#editPost .editPost-content p,
+.editPost-content-district p,
+.editPost-content-schedule p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#editPost .editPost-content span,
+.editPost-content-district span{
+    color: red;
+}
+#editPost .editPost-content,
+.editPost-content-schedule{
+    padding-right:10px;
+    padding-left:10px;
+}
+#editPost .editPost-content-schedule input{
+    padding-top:3px;
+    padding-bottom: 30px;
+    padding-left:5px;
+    border:1px solid black;
+    outline:0;
+    width:100%;
+}
+#editPost .btn-save{
+    margin-bottom: 20px;
+}
+#editPost .btn-save button{
+    width:100px;
+}
+#editPost .btn-back{
+    width:100px;
+    margin-left:20px;
+}
+/*end editPost*/
+
+/* search */
+#search .search-normal {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+#search .search-normal input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    background-color: rgba(245, 245, 245, 1);
+}
+#search .content .box-content{
+    width: 100%;
+    border: 1px solid #171615;
+    border-radius: 10px;
+    padding: 15px 20px 25px 0px;
+    margin-bottom: 20px;
+}
+#search .title-content p{
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+#search .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#search .box-content .box-content-info-left{
+    display: flex;
+    align-items: center;
+}
+#search .box-content .box-content-info img{
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+#search .box-content i{
+    font-size: 25px;
+    margin-right: 30px;
+}
+#search .box-content p{
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#search .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#search .detail .detail-subject i{
+    margin-right: 10px;
+}
+#search .detail .detail-subject{
+    padding: 10px;
+    font-size: 15px;
+    border-left: 1px solid #ccc;
+}
+#search .btn-view-container{
+    margin-top:20px;
+}
+#search{
+    margin-bottom: 500px;
+}
+#search .btn-search{
+    background-color: #000;
+    color:white;
+    padding:10px 20px 10px 20px;
+    margin-left:10px;
+    transform: translateY(-3px);
+}
+#search .no-search{
+    margin-top:100px;
+}
+#search .border-bt{
+    background: #07AA5C;
+    width:100%;
+    height:1px;
+    margin-bottom:30px;
+}
+#search p,
+#search span{
+    font-weight:600;
+    margin-bottom: 0;
+}
+#search .search-content{
+    border:1px solid rgba(140, 140, 140, 0.70);
+    border-radius:20px;
+    margin-bottom: 30px;
+}
+#search .search-content-avatar{
+    margin-left:20px;
+}
+#search .search-content-avatar img{
+    width:70px;
+    height:50px;
+    border-radius: 50%;
+}
+#search .search-content-detail{
+    margin-left:20px;
+}
+#searchr .search-content-detail-title p{
+    font-size:18px;
+}
+#search .btn-save button,
+#search .btn-apply button{
+    width:80px;
+}
+#search .btn-save{
+    margin-right:5px;
+}
+#search .btn-apply{
+    margin-right:10px;
+}
+#search .search-content-detail-content{
+    margin-left:30px;
+}
+#search .search-content-detail-content p{
+    font-weight: 400!important;
+}
+/*end search */
+
+/*editInfoTutor*/
+#editInfoTutor .edit-profile-tutor-title ,
+.edit-profile-professional,
+.edit-tutor-confirmation{
+    color:white;
+    font-size:15px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    font-weight: 600;
+}
+#editInfoTutor .edit-profile-tutor-information{
+    padding-left:30px;
+    padding-top:20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+} 
+#editInfoTutor input, 
+#editInfoTutor select{
+    width:85%;
+    padding: 5px;
+    border-radius: 20px;
+    border:1px solid black;
+    outline:0;
+}
+#editInfoTutor input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#editInfoTutor .pdl p{
+    padding-left: 80px;
+}
+#editInfoTutor .edit-profile-tutor-title p,
+.form-profile-tutor p 
+{
+    margin-bottom: 0!important;
+}
+#editInfoTutor .form-introduce-yourself ,.form-class-schedule{
+    padding-top:10px;
+    padding-bottom: 30px;
+}
+#editInfoTutor .form-introduce-yourself input ,
+#editInfoTutor .form-class-schedule input
+{
+    width:100%;
+    padding-bottom: 50px;
+}
+#editInfoTutor .form-upload-image img{
+    width:300px;
+    height:150px;
+    margin-top:30px;
+}
+#editInfoTutor .btn-edit{
+    width:110px;
+}
+#editInfoTutor .padding{
+    padding-left: 20px;
+}
+/*end editInfoTutor*/
+
+/*viewPost*/
+#viewPost .container-btn-post .border{
+    border:1px solid #ccc;
+    border-radius:20px;
+    display:inline-block;
+    padding:10px;
+    
+}
+#viewPost .viewPost-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:30px;
+    padding:5px 60px 5px 20px;
+}
+#viewPost .viewPost-title p{
+    color:white;
+    margin-bottom: 0;
+}
+#viewPost .border-bt{
+    background: #07AA5C;
+    width:100%;
+    height:1px;
+    margin-bottom:30px;
+}
+#viewPost p,
+#viewPost span{
+    font-weight:600;
+    margin-bottom: 0;
+}
+#viewPost .viewPost-content{
+    border:1px solid rgba(140, 140, 140, 0.70);
+    border-radius:20px;
+    margin-bottom: 30px;
+}
+#viewPost .viewPost-content-avatar{
+    margin-left:60px;
+}
+#viewPost .viewPost-content-avatar img{
+    width:70px;
+    height:50px;
+    border-radius: 50%;
+}
+#viewPost .viewPost-content-detail{
+    margin-left:20px;
+}
+#viewPost .viewPost-content-detail-title p{
+    font-size:18px;
+}
+#viewPost .btn-save button,
+#viewPost .btn-apply button{
+    width:80px;
+}
+#viewPost .btn-save{
+    margin-right:5px;
+}
+#viewPost .btn-apply{
+    margin-right:10px;
+}
+#viewPost .viewPost-content-detail-content{
+    margin-left:70px;
+}
+#viewPost .viewPost-content-detail-content p{
+    font-weight: 400!important;
+}
+/*end viewPost*/
+
+/*viewPostTutor*/
+#viewPostTutor .container-btn-post .border{
+    border:1px solid #ccc;
+    border-radius:20px;
+    display:inline-block;
+    padding:10px;
+    
+}
+#viewPostTutor .viewPostTutor-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:30px;
+    padding:5px 60px 5px 20px;
+}
+#viewPostTutor .viewPostTutor-title p{
+    color:white;
+    margin-bottom: 0;
+}
+#viewPostTutor .border-bt{
+    background: #07AA5C;
+    width:100%;
+    height:1px;
+    margin-bottom:30px;
+}
+#viewPostTutor p,
+#viewPostTutor span{
+    font-weight:600;
+    margin-bottom: 0;
+}
+#viewPostTutor .viewPostTutor-content{
+    border:1px solid rgba(140, 140, 140, 0.70);
+    border-radius:20px;
+    margin-bottom: 30px;
+}
+#viewPostTutor .viewPostTutor-content-avatar{
+    margin-left:20px;
+}
+#viewPostTutor .viewPostTutor-content-avatar img{
+    width:70px;
+    height:50px;
+    border-radius: 50%;
+}
+#viewPostTutor .viewPostTutor-content-detail{
+    margin-left:20px;
+}
+#viewPostTutor .viewPostTutor-content-detail-title p{
+    font-size:18px;
+}
+#viewPostTutor .btn-save button,
+#viewPostTutor .btn-apply button{
+    width:80px;
+}
+#viewPostTutor .btn-save{
+    margin-right:5px;
+}
+#viewPostTutor .btn-apply{
+    margin-right:10px;
+}
+#viewPostTutor .viewPostTutor-content-detail-content{
+    margin-left:30px;
+}
+#viewPostTutor .viewPostTutor-content-detail-content p{
+    font-weight: 400!important;
+}
+/*end viewPostTutor*/
+/*saveViewPost*/
+#saveViewPost .saveViewPost-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 60px 5px 20px;
+}
+#saveViewPost .saveViewPost-title p{
+    color:white;
+    margin-bottom: 0;
+}
+#saveViewPost .border-bt{
+    background: #07AA5C;
+    width:100%;
+    height:1px;
+    margin-bottom:30px;
+}
+#saveViewPost .saveViewPost-content p,
+#saveViewPost .saveViewPost-content span{
+    font-weight:600;
+    margin-bottom: 0;
+}
+#saveViewPost .saveViewPost-content{
+    border:1px solid rgba(140, 140, 140, 0.70);
+    border-radius:20px;
+    margin-bottom: 30px;
+}
+#saveViewPost .saveViewPost-content-avatar{
+    margin-left:20px;
+}
+#saveViewPost .saveViewPost-content-avatar img{
+    height:50px;
+    border-radius: 50%;
+}
+#saveViewPost .saveViewPost-content-detail{
+    margin-left:20px;
+}
+#saveViewPost .saveViewPost-content-detail-title p{
+    font-size:18px;
+}
+#saveViewPost .btn-save button,
+#saveViewPost .btn-apply button{
+    width:80px;
+}
+#saveViewPost .btn-apply{
+    margin-right:10px;
+}
+/*end saveViewPost*/
+
+/*changePassword*/
+#changePassword .changePassword-title{
+    margin-top:50px;
+    display:inline-block;
+    background-color: #07AA5C;
+    padding:5px 20px 5px 20px;
+}
+#changePassword .changePassword-title p{
+    color:white;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+#changePassword input{
+    width:90%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgba(217, 217, 217, 0.52);
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+}
+#changePassword input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#changePassword span{
+    color:red;
+}
+#changePassword .form-changePassword p{
+    font-weight: 500;
+}
+#changePassword .form-changePassword{
+    margin-left: 20px;
+}
+#changePassword .btn-change{
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-right:50px;
+}
+#changePassword .btn-change button{
+    width:200px;
+}
+/*end changePassword*/
+
+/*postHistory*/
+#postHistory .postHistory-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 60px 5px 20px;
+}
+#postHistory .postHistory-title p{
+    color:white;
+    margin-bottom: 0;
+}
+#postHistory .border-bt{
+    background: #07AA5C;
+    width:100%;
+    height:1px;
+    margin-bottom:30px;
+}
+#postHistory .postHistory-content-detail p,
+#postHistory .postHistory-content-detail span{
+    font-weight:600;
+    margin-bottom: 0;
+}
+#postHistory .postHistory-content{
+    border:1px solid rgba(140, 140, 140, 0.70);
+    border-radius:20px;
+    margin-bottom: 30px;
+}
+#postHistory .postHistory-content-avatar{
+    margin-left:20px;
+}
+#postHistory .postHistory-content-avatar img{
+    width:70px;
+    height:50px;
+    border-radius: 50%;
+}
+#postHistory .postHistory-content-detail{
+    margin-left:20px;
+}
+#postHistory .postHistory-content-detail-title p{
+    font-size:18px;
+}
+#postHistory .btn-save button,
+#postHistory .btn-apply button{
+    width:80px;
+}
+#postHistory .btn-save{
+    margin-right:5px;
+}
+#postHistory .btn-apply{
+    margin-right:10px;
+}
+#postHistory .container-icon i{
+    font-size:20px;
+}
+#postHistory .padding{
+    padding-left:50px;
+}
+#postHistory .dropdown-menu{
+    transform: translate3d(-145px, 22px, 0px)!important;
+}
+/*end postHistory*/
+/*saveTutor*/
+#saveTutor .content-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 60px 5px 20px;
+}
+#saveTutor .content-title p{
+    color:white;
+}
+#saveTutor .content .box-content{
+    width: 100%;
+    border: 1px solid #171615;
+    border-radius: 10px;
+    padding: 15px 20px 25px 0px;
+    margin-bottom: 20px;
+}
+#saveTutor .title-content p{
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+#saveTutor .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#saveTutor .box-content .box-content-info-left{
+    display: flex;
+    align-items: center;
+}
+#saveTutor .box-content .box-content-info img{
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+#saveTutor .box-content i{
+    font-size: 25px;
+    margin-right: 30px;
+}
+#saveTutor .box-content p{
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#saveTutor .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#saveTutor .detail .detail-subject i{
+    margin-right: 10px;
+}
+#saveTutor .detail .detail-subject{
+    padding: 10px;
+    font-size: 15px;
+    border-left: 1px solid #ccc;
+}
+#saveTutor .btn-view-container{
+    margin-top:20px;
+}
+#saveTutor .btn-view-container .btn-view-detail{
+    width:186px;
+}
+/*end saveTutor*/
+
+/*saveTutorVip*/
+#saveTutorVip .content-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 60px 5px 20px;
+}
+#saveTutorVip .content-title p{
+    color:white;
+}
+#saveTutorVip .content .box-content{
+    width: 100%;
+    border: 1px solid #171615;
+    border-radius: 10px;
+    padding: 15px 20px 25px 0px;
+    margin-bottom: 20px;
+}
+#saveTutorVip .title-content p{
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+#saveTutorVip .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#saveTutorVip .box-content .box-content-info-left{
+    display: flex;
+    align-items: center;
+}
+#saveTutorVip .box-content .box-content-info img{
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+#saveTutorVip .box-content i{
+    font-size: 25px;
+    margin-right: 30px;
+}
+#saveTutorVip .box-content p{
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#saveTutorVip .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#saveTutorVip .detail .detail-subject i{
+    margin-right: 10px;
+}
+#saveTutorVip .detail .detail-subject{
+    padding: 10px;
+    font-size: 15px;
+    border-left: 1px solid #ccc;
+}
+#saveTutorVip .btn-view-container{
+    margin-top:20px;
+}
+#saveTutorVip .btn-view-container .btn-view-detail{
+    width:186px;
+}
+#saveTutorVip .rating-area i{
+    font-size:20px;
+    color:green;
+    cursor: pointer;
+}
+/*end saveTutorVip*/
+
+/*viewTutor*/
+#viewTutor img {
+    width:150px;
+    height:115px;
+}
+#viewTutor i{
+    color:green;
+}
+/*end viewTutor */
+
+/*viewTutorForParentsVip*/
+#viewTutorForParentsVip img {
+    width:150px;
+    height:115px;
+}
+#viewTutorForParentsVip i{
+    color:green;
+}
+#viewTutorForParentsVip .FeedBackForParentsVip{
+    border-radius: 20px;
+    border: 1px solid rgba(140, 140, 140, 0.70);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.22);
+}
+#viewTutorForParentsVip .FeedBackForParentsVip .padding{
+    padding:10px;
+}
+#viewTutorForParentsVip .post-comment-container{
+    border: 1px solid #000;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.22);
+}
+#viewTutorForParentsVip .post-comment-container input{
+    padding-bottom: 100px;
+    padding-left:10px;
+    padding-top:10px;
+    border-radius: 10px;
+    outline:none;
+    border:solid 1px #000;
+    width:100%;
+}
+#viewTutorForParentsVip .post-comment-container input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#viewTutorForParentsVip .rating-area i{
+    font-size:20px;
+    cursor:pointer;
+}
+/*end viewTutorForParentsVip*/
+
+/*appointment*/
+#appointment .form-appointment{
+    width: 100%;
+    height:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #464444;
+    border-radius: 10px;
+}
+#appointment .form-title{
+    width: 100%;
+    border: 1px solid #464444;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #464444;
+    padding: 9px;
+}
+#appointment .form-title p{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+}
+#appointment input{
+    width:100%;
+}
+#appointment .appointment-location input{
+    padding-bottom: 100px;
+}
+#appointment .btn-container{
+    margin-top:150px;
+    margin-right:25px;
+}
+/*end appointment*/
+
+/*EditAccountMember*/
+#EditAccountMember .EditAccountMember-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 40px 5px 20px;
+}
+#EditAccountMember .EditAccountMember-title p{
+    color:white;
+    margin-bottom: 0;
+}
+#EditAccountMember .form-edit input, .form-edit select {
+    width:100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgba(217, 217, 217, 0.52);
+    border: none;
+    border-radius: 10px;
+    outline:0;
+}
+#EditAccountMember .form-edit input:focus{
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+#EditAccountMember .form-edit{
+    padding-top: 20px;
+}
+#EditAccountMember .form-edit .btn-edit{
+    padding:40px;
+    text-align:center;
+}
+#EditAccountMember .form-edit .btn-edit button{
+    width:125px;
+}
+#EditAccountMember .form-edit label{
+    color:#8C8C8C
+}
+#EditAccountMember .padding{
+    padding-left:20px;
+}
+/*end EditAccountMember*/
+
+/*ViewSavePostForTutor*/
+#ViewSavePostForTutor .ViewSavePostForTutor-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 60px 5px 20px;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-title p{
+    color:white;
+    margin-bottom: 0;
+}
+#ViewSavePostForTutor .border-bt{
+    background: #07AA5C;
+    width:100%;
+    height:1px;
+    margin-bottom:30px;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-content-detail p,
+#ViewSavePostForTutor .ViewSavePostForTutor-content-detail span{
+    font-weight:600;
+    margin-bottom: 0;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-content{
+    border:1px solid rgba(140, 140, 140, 0.70);
+    border-radius:20px;
+    margin-bottom: 30px;
+}
+#ViewSavePostForTutor.ViewSavePostForTutor-content-avatar{
+    margin-left:20px;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-content-avatar img{
+    width:70px;
+    height:50px;
+    border-radius: 50%;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-content-detail{
+    margin-left:20px;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-content-detail-title p{
+    font-size:18px;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-btn-container-Apply{
+    margin-right:50px;
+}
+#ViewSavePostForTutor .ViewSavePostForTutor-btn-container-Apply button{
+    width:80px;
+}
+#ViewSavePostForTutor .container-icon i{
+    font-size:20px;
+}
+#ViewSavePostForTutor .padding{
+    padding-left:50px;
+}
+#ViewSavePostForTutor .dropdown-menu{
+    transform: translate3d(-145px, 22px, 0px)!important;
+}
+/*end ViewSavePostForTutor*/
+
+/*ViewListTutor*/
+#ViewListTutor .content-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 60px 5px 20px;
+}
+#ViewListTutor .content-title p{
+    color:white;
+}
+#ViewListTutor .content .box-content{
+    width: 100%;
+    border: 1px solid #171615;
+    border-radius: 10px;
+    padding: 15px 20px 25px 0px;
+    margin-bottom: 20px;
+}
+#ViewListTutor .title-content p{
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+#ViewListTutor .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#ViewListTutor .box-content .box-content-info-left{
+    display: flex;
+    align-items: center;
+}
+#ViewListTutor .box-content .box-content-info img{
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+#ViewListTutor .box-content i{
+    font-size: 25px;
+    margin-right: 30px;
+}
+#ViewListTutor .box-content p{
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#ViewListTutor .box-content .box-content-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#ViewListTutor .detail .detail-subject i{
+    margin-right: 10px;
+}
+#ViewListTutor .detail .detail-subject{
+    padding: 10px;
+    font-size: 15px;
+    border-left: 1px solid #ccc;
+}
+#ViewListTutor .btn-view-container{
+    margin-top:20px;
+}
+#ViewListTutor .btn-view-container .btn-view-detail{
+    width:186px;
+}
+#ViewListTutor .saveTutor i {
+    cursor: pointer;
+}
+/*end ViewListTutor*/
+
+/*Pay*/ 
+#Pay .pay-title{
+    background-color:rgba(7, 170, 92, 0.81);
+    display:inline-block;
+    margin-top:50px;
+    padding:5px 40px 5px 20px;
+}
+#Pay .pay-title p{
+    color:white;
+}
+#Pay .UpdateAccount-package{
+    background-color: #07AA5C;
+    display:inline-block;
+    padding:5px 40px 5px 40px;
+}
+#Pay .UpdateAccount-package p{
+    color:white
+}
+#Pay .pay-container{
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px #8C8C8C;
+}
+#Pay button{
+    width:100%;
+}
+#Pay .UpdateAccount-package-detail{
+    margin-left:140px;
+}
+/*end Pay*/
+/*animation css*/
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        /* bên trái vào */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        /*bên phải vào */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+    /*hiện ra*/
+}
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
